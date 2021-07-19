@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Random;
 import java.util.Scanner;
-import org.junit.runner.*;
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
 
 
 public class DrunkCarnivalShooterImpl implements DrunkCarnivalShooter {
@@ -60,6 +62,7 @@ public class DrunkCarnivalShooterImpl implements DrunkCarnivalShooter {
 		String ret = "Round #" + roundNum + ":";
 		for (boolean standing : targets) {
 			if (standing) {
+
 				ret += "  ||  ";
 			} else {
 				ret += "      ";
