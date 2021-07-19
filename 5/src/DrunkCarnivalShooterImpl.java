@@ -67,7 +67,7 @@ public class DrunkCarnivalShooterImpl implements DrunkCarnivalShooter {
 				ret.append("      ");
 			}
 		}
-		return ret;
+		return ret.toString();
 	}
 
 	/**
